@@ -63,7 +63,7 @@ python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade -r requirements.txt
 ```
 
-## Task 3. Start a Kafka Producer
+## Task 3. Start a custom Kafka Producer
 
 Producers generate streaming data for our topics.
 
@@ -74,17 +74,17 @@ Windows:
 
 ```shell
 .venv\Scripts\activate
-py -m producers.kafka_producer_case
+py -m producers.kafka_producer_stcyr
 ```
 
 Mac/Linux:
 
 ```zsh
 source .venv/bin/activate
-python3 -m producers.kafka_producer_case
+python3 -m producers.kafka_producer_stcyr
 ```
 
-## Task 4. Start a Kafka Consumer
+## Task 4. Start a custom Kafka Consumer
 
 Consumers process data from topics or logs in real time.
 
@@ -95,14 +95,14 @@ Windows:
 
 ```shell
 .venv\Scripts\activate
-py -m consumers.kafka_consumer_case
+py -m consumers.kafka_consumer_stcyr
 ```
 
 Mac/Linux:
 
 ```zsh
 source .venv/bin/activate
-python3 -m consumers.kafka_consumer_case
+python3 -m consumers.kafka_consumer_stcyr
 ```
 
 ## Later Work Sessions
