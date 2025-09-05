@@ -61,6 +61,12 @@ def process_message(message: str) -> None:
     """
     logger.info(f"Processing message: {message}")
 
+    if "Failure" in message:
+        logger.warning(f"ALERT! Found failure message: {message}")
+
+    if "Success" in message:
+        logger.info("✅ Success recorded")
+        
 
 #####################################
 # Define main function for this module
