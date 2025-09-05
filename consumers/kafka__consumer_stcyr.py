@@ -59,13 +59,17 @@ def process_message(message: str) -> None:
     Args:
         message (str): The message to process.
     """
-    logger.info(f"Processing message: {message}")
+     # Check for sports mentions
+    if "Chiefs" in message or "Royals" in message or "football" in message:
+        logger.warning(f"🏈 Sports Alert! Found message: {message}")
 
-    if "Failure" in message:
-        logger.warning(f"ALERT! Found failure message: {message}")
+    # Check for streaming mentions
+    if "Streaming" in message:
+        logger.info("📡 Streaming-related buzz detected.")
 
-    if "Success" in message:
-        logger.info("✅ Success recorded")
+    # Check for positive phrases
+    if "great day" in message or "fun" in message:
+        logger.info("😊 Positive vibe detected.")
         
 
 #####################################
